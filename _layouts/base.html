@@ -1,16 +1,10 @@
 ---
 ---
-
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>{{ page.title | prepend: site.head_title }}</title>
-    <link
-      rel="stylesheet"
-      href="{{ '/assets/css/_style.css' | prepend: site.baseurl }}"
-    />
-  </head>
-  <body>
-    {{ content }}
-  </body>
+    {% include header.html %}
+    <body>
+        {{ content }}
+        {% include footer.html %}
+    </body>
 </html>
